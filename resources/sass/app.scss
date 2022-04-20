@@ -1,1 +1,229 @@
-//
+// common
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    color: currentColor;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1030px;
+    margin: 0 auto;
+    padding: 10px 10px;
+}
+
+// header
+header .container {
+    height: 120px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    ul {
+        list-style: none;
+        display: flex;
+        gap: 15px;
+
+        li {
+            text-transform: uppercase;
+            font-size: 12px;
+            font-weight: 900;
+            line-height: 115px;
+            color: #555554;
+
+            &.active::after {
+                content: "";
+                display: block;
+                border-bottom: 4px solid #0282F9;
+            }
+
+            &.active {
+                color: #0282F9;
+            }
+        }
+    }
+}
+
+// blue banner
+#blue-banner {
+    background-color: #0282F9;
+
+    .container {
+        color: white;
+        padding: 50px 0;
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            li {
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                font-size: 12px;
+                white-space: no-wrap;
+
+                a {
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    display: contents;
+                    color: currentColor;
+
+                    figure {
+                        height: 60px;
+                        width: 60px;
+
+                        img {
+                            height: 100%;
+                            width: 100%;
+                            object-fit: contain;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// main content 
+#main-content {
+    background-color: #1C1C1C;
+    color: white;
+    min-height: 150px;
+    padding-bottom: 20px;
+
+    #jumbo-figure {
+        height: 300px;
+
+        img {
+            object-fit: cover;
+            height: 100%;
+            object-position: top center;
+        }
+    }
+
+    .container {
+        padding: 10px 0;
+    }
+
+    #card-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    button {
+        background-color: #0282F9;
+        border: none;
+        text-transform: uppercase;
+        color: white;
+        font-weight: 700;
+        cursor: pointer;
+
+        &#current-series {
+            transform: translateY(-70%);
+            padding: 15px 17px;
+            font-size: 1.3rem;
+        }
+
+        &#load-more {
+            display: block;
+            margin: 20px auto;
+            padding: 12px 40px;
+        }
+    }
+}
+
+// social banner
+#social-banner {
+    background-color: #303030;
+
+   .container {
+       padding: 40px 0;
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+
+       ul {
+           display: flex;
+           align-items: center;
+           gap: 15px;
+           list-style: none;
+
+           #social-cta {
+               font-size: 15px;
+               color: #0980F4;
+               font-weight: 900;
+               text-transform: uppercase;
+           }
+
+           a {
+               display: contents;
+           }
+       }
+
+       #sign-up {
+           padding: 10px 15px;
+           border: 2px solid #0282F9;
+           background-color: transparent;
+           color: white;
+           font-weight: 600;
+           text-transform: uppercase;
+
+           a {
+               color: currentColor;
+               text-decoration: none;
+           }
+       }
+   }
+}
+
+// footer 
+footer {
+    background-image: url("../assets/img/footer-bg.jpg");
+
+    .container {
+        padding: 30px 0;
+        background-image: url("../assets/img/dc-logo-bg.png");
+        background-repeat: no-repeat;
+        background-size: 40%;
+        background-position: center right;
+        display: flex;
+        gap: 12px;
+
+        ul {
+            list-style: none;
+            font-size: 11px;
+            
+            li {
+                padding: 3px 0;
+                &.title {
+                    color: white;
+                    font-weight: 900;
+                    // text-align: center;
+                    text-transform: uppercase;
+                    font-size: 14px;
+                    padding: 7px 0;
+                }
+                
+                a {
+                    text-decoration: none;
+                    color: #959595;
+                }
+            }
+        }
+        
+    }
+    
+}

@@ -49,7 +49,7 @@
         </div>
     </section>
 
-    <section id="jumbo">
+    <section id="main-content">
         <figure id="jumbo-figure">
             <img src="../assets/img/jumbotron.jpg" alt="">
         </figure>
