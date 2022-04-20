@@ -2,24 +2,24 @@
     <div class="container">
         <div class="list-col">
             <ul>
-            <li class="title">DC Comics</li>
-            <li><a href="#">Characters</a></li>
-            <li><a href="#">Comics</a></li>
-            <li><a href="#">Movie</a></li>
-            <li><a href="#">Tv</a></li>
-            <li><a href="#">Games</a></li>
-            <li><a href="#">Collectibles</a></li>
-            <li><a href="#">Videos</a></li>
-            <li><a href="#">Fans</a></li>
-            <li><a href="#">News</a></li>
-            <li><a href="#">Shop</a></li>
-        </ul>
+                <li class="title">DC Comics</li>
+                <li><a href="#">Characters</a></li>
+                <li><a href="#">Comics</a></li>
+                <li><a href="#">Movie</a></li>
+                <li><a href="#">Tv</a></li>
+                <li><a href="#">Games</a></li>
+                <li><a href="#">Collectibles</a></li>
+                <li><a href="#">Videos</a></li>
+                <li><a href="#">Fans</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Shop</a></li>
+            </ul>
 
-        <ul>
-            <li class="title">Shop</li>
-            <li><a href="#">Shop DC</a></li>
-            <li><a href="#">Shop DC Collectibles</a></li>
-        </ul>
+            <ul>
+                <li class="title">Shop</li>
+                <li><a href="#">Shop DC</a></li>
+                <li><a href="#">Shop DC Collectibles</a></li>
+            </ul>
         </div>    
 
         <ul class="list-col">
