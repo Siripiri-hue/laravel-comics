@@ -59,8 +59,14 @@
             <button id="current-series">Current series</button>
 
             <div id="card-wrapper">
-                <Card v-for="(element, i) in comics" :key="i"
-                :img="element.thumb" :series="element.series" />
+                @foreach ($comics as $comic)
+                    <div class="card">
+                        <figure>
+                            <img src="{{ $comic['thumb'] }}" alt="">
+                            <figcaption>{{ $comic['series'] }}</figcaption>
+                        </figure>
+                    </div>
+                @endforeach
             </div>         
 
             <button id="load-more">Load more</button>
