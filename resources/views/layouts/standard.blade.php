@@ -1,3 +1,5 @@
+<!-- layout di base -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,5 +15,7 @@
     @yield('mainContent')
 
     @include ('partials.footer')
+
+    @include ('partials.socialbanner')
 </body>
 </html>

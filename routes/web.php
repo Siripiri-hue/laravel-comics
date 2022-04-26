@@ -20,5 +20,7 @@ Route::get('/', function () {
 
 Route::get('/detail/{id}', function($id) {
     $comics = config('comics');
-    return view('detail', compact('id'));
+    $fumetto = $comics[$id];
+    return view('detail', compact('fumetto'));
+    // ->with('id', $id);
 })->name('comic.show');

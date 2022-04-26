@@ -1,0 +1,43 @@
+// style della barra social
+
+section#social-banner {
+    background-color: #303030;
+
+    .container {
+        padding: 40px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        ul {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        list-style: none;
+
+            #social-cta {
+                font-size: 15px;
+                color: #0980F4;
+                font-weight: 900;
+                text-transform: uppercase;
+            }
+
+            a {
+                display: contents;
+            }
+        }
+
+        #sign-up {
+        padding: 10px 15px;
+        border: 2px solid #0282F9;
+        background-color: transparent;
+        color: white;
+        font-weight: 600;
+        text-transform: uppercase;
+            a {
+                color: currentColor;
+                text-decoration: none;
+            }
+        }
+    }
+}

@@ -1,5 +1,7 @@
 // common
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
+@import 'partials/detail';
+@import 'partials/socialbanner';
 
 * {
     margin: 0;
@@ -24,33 +26,45 @@ a {
 }
 
 // header
-header .container {
-    height: 120px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-
-    ul {
-        list-style: none;
+header {
+    .container {
+        height: 120px;
         display: flex;
-        gap: 15px;
-
-        li {
-            text-transform: uppercase;
-            font-size: 12px;
-            font-weight: 900;
-            line-height: 115px;
-            color: #555554;
-
-            &.active::after {
-                content: "";
-                display: block;
-                border-bottom: 4px solid #0282F9;
+        justify-content: space-around;
+        align-items: center;
+    
+        ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+    
+            li {
+                text-transform: uppercase;
+                font-size: 12px;
+                font-weight: 900;
+                line-height: 115px;
+                color: #555554;
+    
+                &.active::after {
+                    content: "";
+                    display: block;
+                    border-bottom: 4px solid #0282F9;
+                }
+    
+                &.active {
+                    color: #0282F9;
+                }
             }
+        }
+    }
 
-            &.active {
-                color: #0282F9;
-            }
+    #jumbo-figure {
+        height: 300px;
+    
+        img {
+            object-fit: cover;
+            height: 100%;
+            object-position: top center;
         }
     }
 }
@@ -103,16 +117,6 @@ header .container {
     color: white;
     min-height: 150px;
     padding-bottom: 20px;
-
-    #jumbo-figure {
-        height: 300px;
-
-        img {
-            object-fit: cover;
-            height: 100%;
-            object-position: top center;
-        }
-    }
 
     .container {
         padding: 10px 0;

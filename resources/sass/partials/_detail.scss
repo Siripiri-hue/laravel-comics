@@ -1,0 +1,42 @@
+// style della pagina del dettaglio
+
+#comic-detail {
+
+    .container {
+        max-width: 900px;
+        margin: 0 auto;
+        border: 1px solid black;
+
+        .comic-description {
+            display: flex;
+
+            #description {
+
+                h1 {
+                    margin-bottom: 20px;
+                    font-size: 1.7rem;
+                }
+                
+                #green-line {
+                    background-color: #55BA59;
+                    color: white;
+                    padding: 5px;
+                    margin-bottom: 20px;
+                }
+
+                p {
+                    margin-bottom: 20px;
+                }
+            }
+
+            .col-8 {
+                width: calc(100% / 12 * 8);
+            }
+    
+            .col-4 {
+                width: calc(100% / 12 * 4);
+                text-align: right;
+            }
+        }  
+    }
+}

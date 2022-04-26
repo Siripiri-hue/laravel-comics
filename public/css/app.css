@@ -1,6 +1,84 @@
 @import url(https://fonts.googleapis.com/css2?family=Roboto:wght@400;
 
-900&display=swap);* {
+900&display=swap);#comic-detail .container {
+  max-width: 900px;
+  margin: 0 auto;
+  border: 1px solid black;
+}
+
+#comic-detail .container .comic-description {
+  display: flex;
+}
+
+#comic-detail .container .comic-description #description h1 {
+  margin-bottom: 20px;
+  font-size: 1.7rem;
+}
+
+#comic-detail .container .comic-description #description #green-line {
+  background-color: #55BA59;
+  color: white;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+
+#comic-detail .container .comic-description #description p {
+  margin-bottom: 20px;
+}
+
+#comic-detail .container .comic-description .col-8 {
+  width: 66.6666666667%;
+}
+
+#comic-detail .container .comic-description .col-4 {
+  width: 33.3333333333%;
+  text-align: right;
+}
+
+section#social-banner {
+  background-color: #303030;
+}
+
+section#social-banner .container {
+  padding: 40px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section#social-banner .container ul {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  list-style: none;
+}
+
+section#social-banner .container ul #social-cta {
+  font-size: 15px;
+  color: #0980F4;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+section#social-banner .container ul a {
+  display: contents;
+}
+
+section#social-banner .container #sign-up {
+  padding: 10px 15px;
+  border: 2px solid #0282F9;
+  background-color: transparent;
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+section#social-banner .container #sign-up a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -53,6 +131,18 @@ header .container ul li.active {
   color: #0282F9;
 }
 
+header #jumbo-figure {
+  height: 300px;
+}
+
+header #jumbo-figure img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  -o-object-position: top center;
+     object-position: top center;
+}
+
 #blue-banner {
   background-color: #0282F9;
 }
@@ -100,18 +190,6 @@ header .container ul li.active {
   color: white;
   min-height: 150px;
   padding-bottom: 20px;
-}
-
-#main-content #jumbo-figure {
-  height: 300px;
-}
-
-#main-content #jumbo-figure img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  height: 100%;
-  -o-object-position: top center;
-     object-position: top center;
 }
 
 #main-content .container {

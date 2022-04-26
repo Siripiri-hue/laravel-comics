@@ -19,4 +19,8 @@
             </ul>
         </nav>
     </div>
+
+    <figure id="jumbo-figure">
+        <img src="{{ asset('img/jumbotron.jpg') }}" alt="">
+    </figure>
 </header>
