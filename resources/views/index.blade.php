@@ -59,9 +59,9 @@
             <button id="current-series">Current series</button>
 
             <div id="card-wrapper">
-                @foreach ($comics as $comic)
+                @foreach ($comics as $indice => $comic)
                     <div class="card">
-                        <a href="{{ route('') }}">
+                        <a href="{{ route('comic.show', ['id' => $indice]) }}">
                             <figure>
                                 <img src="{{ $comic['thumb'] }}" alt="">
                                 <figcaption>{{ $comic['series'] }}</figcaption>

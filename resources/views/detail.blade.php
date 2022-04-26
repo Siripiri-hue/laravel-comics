@@ -8,7 +8,7 @@
                 <!-- titolo -->
                 <!-- linea verde -->
                 <!-- descrizione -->
-                dettaglio del fumetto
+                dettaglio del fumetto {{ $id }}
             </div>
             <figure>
                 <!-- advertisement -->

@@ -18,6 +18,7 @@ Route::get('/', function () {
     return view('index', compact('comics'));
 });
 
-Route::get('/detail', function() {
-    return view('detail');
-});
+Route::get('/detail/{id}', function($id) {
+    $comics = config('comics');
+    return view('detail', compact('id'));
+})->name('comic.show');
