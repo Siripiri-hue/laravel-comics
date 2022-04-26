@@ -61,10 +61,12 @@
             <div id="card-wrapper">
                 @foreach ($comics as $comic)
                     <div class="card">
-                        <figure>
-                            <img src="{{ $comic['thumb'] }}" alt="">
-                            <figcaption>{{ $comic['series'] }}</figcaption>
-                        </figure>
+                        <a href="{{ route('') }}">
+                            <figure>
+                                <img src="{{ $comic['thumb'] }}" alt="">
+                                <figcaption>{{ $comic['series'] }}</figcaption>
+                            </figure>
+                        </a>
                     </div>
                 @endforeach
             </div>         
