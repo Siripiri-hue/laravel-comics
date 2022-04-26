@@ -124,6 +124,24 @@ header .container ul li.active {
   gap: 10px;
 }
 
+#main-content #card-wrapper .card {
+  width: calc((100% - 50px) / 6);
+  flex-grow: 1;
+}
+
+#main-content #card-wrapper .card figure {
+  width: 100%;
+  aspect-ratio: 1;
+}
+
+#main-content #card-wrapper .card figure img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top center;
+     object-position: top center;
+}
+
 #main-content button {
   background-color: #0282F9;
   border: none;
